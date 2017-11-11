@@ -114,6 +114,10 @@ export default new Router({
             component: () => import('@/components/layout/board'),
             redirect: default_router,
             children: BOARD_PAGE_ROUTER_LIST
+        },
+        {
+            path: '*',
+            redirect: '/'
         }
     ]
 })
